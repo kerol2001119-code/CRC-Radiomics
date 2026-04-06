@@ -1,0 +1,17 @@
+# CRC Radiomics Docker Compose
+
+services:
+  radiomics:
+    build: .
+    container_name: crc-radiomics
+    # Mount data directory for input/output
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+    # Environment variables
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Run specific script
+    command: python classification_pipeline.py
+    # Or run with custom script:
+    # command: python classification_for_delong_test.py

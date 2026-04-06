@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs
+*.log
+
+# Data files (large, should be mounted at runtime)
+*.csv
+*.nii
+*.nii.gz
+*.dcm
+*.mat
+
+# Images
+*.png
+*.jpg
+*.jpeg
+
+# Training artifacts (catboost creates these)
+catboost_info/
+
+# Local config
+.env
+.env.local
